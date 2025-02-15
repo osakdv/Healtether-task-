@@ -11,7 +11,7 @@ This is a simple application that fetches data from an endpoint and displays it 
 6. Search functionality
 
 # Tools
-http
+http,
 Provider
 
 - Run "flutter pub get" to install the packages used in this project
