@@ -36,10 +36,10 @@ class _UsersListScreenState extends State<UsersListScreen> {
             );
           }
 
-          // if user data is empty - show a message
-          if (usersProvider.usersData.isEmpty) {
+          // if no data is returned
+          if (usersProvider.usersData.isEmpty  || usersProvider.errorMessage != null) {
             return const Center(
-              child: Text('No users found. Pull down to refresh.'),
+              child: Text('No users found. Check your network connection.'),
             );
           }
 
@@ -71,7 +71,6 @@ class _UsersListScreenState extends State<UsersListScreen> {
               ],
             ),
           );
-          ;
         },
       ),
     );

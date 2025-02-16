@@ -12,7 +12,6 @@ class UsersProvider extends ChangeNotifier {
   String? get errorMessage => _errorMessage;
 
   String _searchQuery = '';
-  String get searchQuery => _searchQuery;
 
   // returns either a filtered data result or the orignal
   List<UserModel> get filteredUsersData {
