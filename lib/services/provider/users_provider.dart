@@ -55,8 +55,8 @@ class UsersProvider extends ChangeNotifier {
         0,
         UserModel(
           id: _usersData.length + 1,
-          name: 'New Item ${DateTime.now().second}',
-          email: 'newitem@example.com',
+          name: 'New User ${DateTime.now().second}',
+          email: 'newuser${DateTime.now().second}@example.com',
           username: "New"
         ));
     notifyListeners();
